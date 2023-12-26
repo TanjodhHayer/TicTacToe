@@ -1,0 +1,4 @@
+  // player.js
+  const Player = (name, marker) => {
+    return { name, marker };
+  };

@@ -1,0 +1,101 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  #game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+
+  #game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+  }
+
+  #result-container {
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+  #announcement-container {
+    margin-top: 10px; /* Adjust the margin as needed */
+  }
+  #start-game-btn {
+    margin-top: 10px; /* Adjust the margin as needed */
+  }
+
+  #rematch-button {
+    margin-top: 10px; /* Adjust the margin as needed */
+  }
+  
+  .cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+
+  }
+  
+  .cell:hover {
+    background-color: #eee;
+  }
+  
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .popup label,
+  .popup input,
+  .popup button {
+    margin-bottom: 10px;
+  }
+  
+  .popup button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .popup button:hover {
+    background-color: #45a049;
+  }
+
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  
